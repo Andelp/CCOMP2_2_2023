@@ -23,7 +23,12 @@ public:
   }
 
   void setYear(int y) {
+    if(y>=1900 && y<=2050){
       year = y;
+    }
+    else{
+        year=1900;
+    }
   }
 
   int getDay() const { 
@@ -38,7 +43,7 @@ public:
     return year; 
     }
   void displayDate() const {
-    std::cout << day << " / " << month << " / " << year << endl;
+    std::cout << day << " / " << month << " / " <<year<<std::endl;
   }
   
   bool isLeapYear() const {
@@ -47,3 +52,4 @@ public:
     else
       return false;
   }
+};

@@ -21,7 +21,7 @@ class student{
         return age;
     }
     bool older(){
-        if(age>18){
+        if(age>=18){
             return true;
         }
         else{
